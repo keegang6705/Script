@@ -1,10 +1,7 @@
 //code type : 2D,3D_Testing
-//code version : 1.0
+//code version : 1.1
 //last working : unity2022.3.25f
 
-
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectSpinner : MonoBehaviour

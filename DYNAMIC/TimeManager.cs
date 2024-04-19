@@ -1,9 +1,7 @@
 //code type : 2D,3D
-//code version : 1.1
+//code version : 1.2
 //last working : unity2022.3.25f
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeManager : MonoBehaviour
@@ -15,72 +13,42 @@ public class TimeManager : MonoBehaviour
     {
         if (isPaused)
         {
-            ResumeGame()
+            ResumeGame();
         }
         else
         {
-            PauseGame()
+            PauseGame();
         }
     }
     public void ResumeGame()
     {
         isPaused = false;
         Time.timeScale = 1f;
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            audioSource.UnPause();
-        }
     }
     public void PauseGame()
     {
         isPaused = true;
         Time.timeScale = 0f;
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            audioSource.Pause();
-        }
     }
     public void CustomSpeedPlay()
     {
         isPaused = false;
         Time.timeScale = customSpeed;
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            audioSource.UnPause();
-        }
     }
     public void x2Play()
     {
         isPaused = false;
         Time.timeScale = 2f;
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            audioSource.UnPause();
-        }
     }
     public void x4Play()
     {
         isPaused = false;
         Time.timeScale = 4f;
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            audioSource.UnPause();
-        }
     }
     public void x10Play()
     {
         isPaused = false;
         Time.timeScale = 10f;
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            audioSource.UnPause();
-        }
     }
 
 }

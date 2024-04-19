@@ -1,8 +1,7 @@
 //code type : 2D
-//code version : 1.0
+//code version : 1.1
 //last working : unity2022.3.17f
 
-using System.Collections;
 using UnityEngine;
 
 public class TopController : MonoBehaviour
